@@ -58,6 +58,7 @@ header {
     color: #fff;
     padding: 100px 0 60px 0; /* Extra space for fixed navbar */
     text-align: center;
+    
 }
 
 header h1 {
@@ -161,4 +162,64 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+.image{ 
+    width: 35vw;
+    animation: floaimage 4s ease-in-out infinite;}
+     @keyframes floaimage{
+        0%{
+            transform: translateY(0);
+        }
+50%{
+    transform: translateY(-22.4rem);
+}
+100%{transform: translateY(0);
+
+}
+ }
+
+@media(max-width: 450px){ 
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+
+.icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.github-link i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 22px;    /* Adjust icon size */
+}
+
+.github-link:hover {
+    color: #6cc644; /* Change color on hover */
+}
+.img{
+    margin: 230px;
+    padding: 20px;
 }
